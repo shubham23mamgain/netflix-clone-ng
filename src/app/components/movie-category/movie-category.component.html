@@ -1,0 +1,11 @@
+<div class="mb-8">
+  <h4 class="text-white font-bold mb-2 text-xl">{{ title }}</h4>
+
+  <div class="flex gap-4">
+    @for (movie of movieList; track movie) {
+    <app-movie-card [movie]="movie"></app-movie-card>
+    }@empty {
+    <p>Loading ...</p>
+    }
+  </div>
+</div>

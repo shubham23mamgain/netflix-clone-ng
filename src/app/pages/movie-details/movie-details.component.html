@@ -1,0 +1,30 @@
+<div class="selected-movie">
+  <div>
+    <img
+      [src]="tmdbConfig.imagePath + selectedMovie.backdrop_path"
+      alt=""
+      class="banner-img"
+    />
+  </div>
+
+  <div class="banner-info text-white px-6 py-6">
+    <h4 class="text-5xl mb-6 mt-6">{{ selectedMovie.original_title }}</h4>
+
+    <p class="text-xl mb-2 mt-2">{{ selectedMovie.overview }}</p>
+
+    <h6 class="mb-3 mt-3">Release Date : {{ selectedMovie.release_date }}</h6>
+
+    <div class="flex gap-6 mb-3 mt-3">
+      <h6>Total Votes : {{ selectedMovie.vote_count }}</h6>
+
+      <h6>Average Rating : {{ selectedMovie.vote_average }}</h6>
+    </div>
+
+    <h5>Runtime : {{ selectedMovie.runtime }} minutes</h5>
+    <!-- <ul>
+      {{ selectedMovie.genres.map((genre)=> {
+      <li>{genre.name}</li>
+      }) }}
+    </ul> -->
+  </div>
+</div>

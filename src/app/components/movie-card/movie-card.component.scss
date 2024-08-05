@@ -1,0 +1,41 @@
+.movie-card {
+  width: 200px;
+  height: 300px;
+
+  .title {
+    display: none;
+    position: absolute;
+    bottom: 18px;
+    color: white;
+    background-color: rgb(88, 87, 87);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .viewMovie {
+    display: none;
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    padding: 10px 20px;
+    color: greenyellow;
+    background-color: rgb(88, 87, 87);
+    font-size: 20px;
+    font-size: medium;
+    text-align: center;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+
+    .title {
+      display: block;
+    }
+
+    .viewMovie {
+      display: block;
+    }
+  }
+}
